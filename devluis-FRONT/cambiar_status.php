@@ -10,4 +10,6 @@ if (isset($_GET['id']) && isset($_GET['accion'])) {
         header("Location: index.php");
     } catch (Exception $e) { die("Error: " . $e->getMessage()); }
 }
+
+
 ?>

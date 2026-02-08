@@ -146,6 +146,8 @@ $vista = isset($_GET['vista']) ? $_GET['vista'] : 'alumnos'; // Por defecto most
                                 <?php $ts=$pdo->query("SELECT * FROM cat_turnos"); while($t=$ts->fetch()) echo "<option value='{$t['id_turno']}'>{$t['nombre']}</option>"; ?>
                             </select>
                         </div>
+
+                        
                         <div class="mb-3 d-flex align-items-center">
                             <label class="w-25 fw-bold">Grado:</label>
                             <select name="id_grado" class="form-select border-dark w-50">
